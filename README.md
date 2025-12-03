@@ -1,6 +1,7 @@
-I want React + Typescript + Chakra UI version 2 web based admin portal dashboard and Node.js + ExpressJS + MySQL backend to interact with admin portal and avitation Landing page built in wordpress, avitation mobile apps.
+I want NextJS web based admin portal dashboard UI and separated independent Node.js + ExpressJS + MySQL backend to interact with admin portal and avitation Landing page built in wordpress, avitation mobile apps.
 
-So I want you to generate 2 projects. Web based admin portal and Backend
+So I want you to generate a frontend NextJS project using this start project. Folder name is admin-panel.
+And importantly, here is isomorphic theme and you can use those theme components for better UI in admin-panel project. For tables, cards, CRUD UIs etc. For all UI elements, just use isomorphic components
 
 Here is breif explaination of the application workflow for your better understanding.
 
@@ -145,6 +146,8 @@ Step 3: Provide baggage overview to operator.
 Add a tab in the flight details view on the web portal where the operator can see all baggage tags for that flight and their latest scan status.
 This provides a basic baggage tracking view without introducing full airline level systems.
 
-I want well structured, optimized and scalable web admin panel and backend, from above description, just ignore if it mentioned any of the feautre that should be in mobile apps, just learn the workflow of the mobile apps for better admin panel and backend APIs.
+And there is a Data Model pdf document here -> Victor Executive Data Model.pdf. So check that pdf to build database and backend properly. I want well structured, optimized and scalable web admin panel and backend, from above description, just ignore if it mentioned any of the feautre that should be in mobile apps, just learn the workflow of the mobile apps for better admin panel and backend APIs.
 
 Create projects and add detailed comments to codes if necessary. And Create a well structured project structure & workflow documention in detail like how the project was designed technically and how it works etc.
+
+For the backend, dont use prisma or sth similar too advanced technology, just nodejs expressjs, mysql is fine and there should be database table generation code as well if table does not exist. With sample data seeds.
