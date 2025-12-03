@@ -10,16 +10,16 @@ import { useEffect, useState } from "react";
 
 const menuItems = [
   {
-    name: "My Profile",
-    href: routes.profile,
+    name: "Mission Control",
+    href: routes.dashboard,
   },
   {
     name: "Account Settings",
-    href: routes.forms.profileSettings,
+    href: routes.settings,
   },
   {
-    name: "Activity Log",
-    href: "#",
+    name: "Users & Roles",
+    href: routes.users,
   },
 ];
 
