@@ -24,7 +24,7 @@ export default function Sidebar({ className }: { className?: string }) {
           aria-label="Site Logo"
           className="text-gray-800 hover:text-gray-900"
         >
-          <Title>LOGO</Title>
+          <Title>Victor Executive</Title>
         </Link>
       </div>
 

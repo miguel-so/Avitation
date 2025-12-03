@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Header from "@/layouts/hydrogen/header";
 import Sidebar from "@/layouts/hydrogen/sidebar";
 
@@ -6,6 +9,19 @@ export default function HydrogenLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const shouldRenderShell = pathname !== "/signin";
+
+  if (!shouldRenderShell) {
+    return (
+      <main className="flex min-h-screen flex-col bg-white">
+        <div className="flex flex-grow flex-col items-center justify-center px-4">
+          <div className="w-full max-w-md">{children}</div>
+        </div>
+      </main>
+    );
+  }
+
   return (
     <main className="flex min-h-screen flex-grow">
       <Sidebar className="fixed hidden xl:block dark:bg-gray-50" />

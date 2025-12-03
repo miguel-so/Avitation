@@ -29,12 +29,10 @@ export const ROW_PER_PAGE_OPTIONS = [
 ];
 
 export const ROLES = {
-  Administrator: "Administrator",
-  Manager: "Manager",
-  Sales: "Sales",
-  Support: "Support",
-  Developer: "Developer",
-  HRD: "HR Department",
-  RestrictedUser: "Restricted User",
-  Customer: "Customer",
+  VictorAdmin: "VictorAdmin",
+  OperatorAdmin: "OperatorAdmin",
+  Handler: "Handler",
+  AuthorityUser: "AuthorityUser",
 } as const;
+
+export const DEFAULT_PAGE_SIZE = 20;

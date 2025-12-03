@@ -6,6 +6,7 @@ import HydrogenLayout from "@/layouts/hydrogen/layout";
 import { ThemeProvider, JotaiProvider } from "@/app/shared/theme-provider";
 import GlobalDrawer from "@/app/shared/drawer-views/container";
 import GlobalModal from "@/app/shared/modal-views/container";
+import { AuthProvider } from "@/contexts/auth-context";
 
 import "./globals.css";
 
@@ -32,9 +33,11 @@ export default function RootLayout({
         <ThemeProvider>
           <NextProgress />
           <JotaiProvider>
-            <HydrogenLayout>{children}</HydrogenLayout>
-            <GlobalDrawer />
-            <GlobalModal />
+            <AuthProvider>
+              <HydrogenLayout>{children}</HydrogenLayout>
+              <GlobalDrawer />
+              <GlobalModal />
+            </AuthProvider>
           </JotaiProvider>
         </ThemeProvider>
       </body>
